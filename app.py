@@ -12,7 +12,7 @@ st.sidebar.header("⚙️ الإعدادات")
 api_key = st.sidebar.text_input("أدخل مفتاح Gemini API الخاص بك", type="password")
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 
 # --- دوال مساعدة ---
 def extract_text_from_pdf(pdf_file):
